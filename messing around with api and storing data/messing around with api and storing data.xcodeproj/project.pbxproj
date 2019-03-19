@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0796D7021DE7B4B00F03D36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0796D6F21DE7B4B00F03D36 /* AppDelegate.swift */; };
+		A0796D7221DE7B4B00F03D36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0796D7121DE7B4B00F03D36 /* ViewController.swift */; };
+		A0796D7521DE7B4B00F03D36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0796D7321DE7B4B00F03D36 /* Main.storyboard */; };
+		A0796D7721DE7B4E00F03D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0796D7621DE7B4E00F03D36 /* Assets.xcassets */; };
+		A0796D7A21DE7B4E00F03D36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0796D7821DE7B4E00F03D36 /* LaunchScreen.storyboard */; };
+		A0796D8521DE7B4E00F03D36 /* messing_around_with_api_and_storing_dataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0796D8421DE7B4E00F03D36 /* messing_around_with_api_and_storing_dataTests.swift */; };
+		A0796D9021DE7B4E00F03D36 /* messing_around_with_api_and_storing_dataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0796D8F21DE7B4E00F03D36 /* messing_around_with_api_and_storing_dataUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0796D8121DE7B4E00F03D36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0796D6421DE7B4B00F03D36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0796D6B21DE7B4B00F03D36;
+			remoteInfo = "messing around with api and storing data";
+		};
+		A0796D8C21DE7B4E00F03D36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0796D6421DE7B4B00F03D36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0796D6B21DE7B4B00F03D36;
+			remoteInfo = "messing around with api and storing data";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0796D6C21DE7B4B00F03D36 /* messing around with api and storing data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "messing around with api and storing data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0796D6F21DE7B4B00F03D36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0796D7121DE7B4B00F03D36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0796D7421DE7B4B00F03D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0796D7621DE7B4E00F03D36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0796D7921DE7B4E00F03D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0796D7B21DE7B4E00F03D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0796D8021DE7B4E00F03D36 /* messing around with api and storing dataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "messing around with api and storing dataTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0796D8421DE7B4E00F03D36 /* messing_around_with_api_and_storing_dataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messing_around_with_api_and_storing_dataTests.swift; sourceTree = "<group>"; };
+		A0796D8621DE7B4E00F03D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0796D8B21DE7B4E00F03D36 /* messing around with api and storing dataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "messing around with api and storing dataUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0796D8F21DE7B4E00F03D36 /* messing_around_with_api_and_storing_dataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messing_around_with_api_and_storing_dataUITests.swift; sourceTree = "<group>"; };
+		A0796D9121DE7B4E00F03D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0796D6921DE7B4B00F03D36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0796D7D21DE7B4E00F03D36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0796D8821DE7B4E00F03D36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0796D6321DE7B4B00F03D36 = {
+			isa = PBXGroup;
+			children = (
+				A0796D6E21DE7B4B00F03D36 /* messing around with api and storing data */,
+				A0796D8321DE7B4E00F03D36 /* messing around with api and storing dataTests */,
+				A0796D8E21DE7B4E00F03D36 /* messing around with api and storing dataUITests */,
+				A0796D6D21DE7B4B00F03D36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0796D6D21DE7B4B00F03D36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0796D6C21DE7B4B00F03D36 /* messing around with api and storing data.app */,
+				A0796D8021DE7B4E00F03D36 /* messing around with api and storing dataTests.xctest */,
+				A0796D8B21DE7B4E00F03D36 /* messing around with api and storing dataUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0796D6E21DE7B4B00F03D36 /* messing around with api and storing data */ = {
+			isa = PBXGroup;
+			children = (
+				A0796D6F21DE7B4B00F03D36 /* AppDelegate.swift */,
+				A0796D7121DE7B4B00F03D36 /* ViewController.swift */,
+				A0796D7321DE7B4B00F03D36 /* Main.storyboard */,
+				A0796D7621DE7B4E00F03D36 /* Assets.xcassets */,
+				A0796D7821DE7B4E00F03D36 /* LaunchScreen.storyboard */,
+				A0796D7B21DE7B4E00F03D36 /* Info.plist */,
+			);
+			path = "messing around with api and storing data";
+			sourceTree = "<group>";
+		};
+		A0796D8321DE7B4E00F03D36 /* messing around with api and storing dataTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0796D8421DE7B4E00F03D36 /* messing_around_with_api_and_storing_dataTests.swift */,
+				A0796D8621DE7B4E00F03D36 /* Info.plist */,
+			);
+			path = "messing around with api and storing dataTests";
+			sourceTree = "<group>";
+		};
+		A0796D8E21DE7B4E00F03D36 /* messing around with api and storing dataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0796D8F21DE7B4E00F03D36 /* messing_around_with_api_and_storing_dataUITests.swift */,
+				A0796D9121DE7B4E00F03D36 /* Info.plist */,
+			);
+			path = "messing around with api and storing dataUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0796D6B21DE7B4B00F03D36 /* messing around with api and storing data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0796D9421DE7B4E00F03D36 /* Build configuration list for PBXNativeTarget "messing around with api and storing data" */;
+			buildPhases = (
+				A0796D6821DE7B4B00F03D36 /* Sources */,
+				A0796D6921DE7B4B00F03D36 /* Frameworks */,
+				A0796D6A21DE7B4B00F03D36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "messing around with api and storing data";
+			productName = "messing around with api and storing data";
+			productReference = A0796D6C21DE7B4B00F03D36 /* messing around with api and storing data.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0796D7F21DE7B4E00F03D36 /* messing around with api and storing dataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0796D9721DE7B4E00F03D36 /* Build configuration list for PBXNativeTarget "messing around with api and storing dataTests" */;
+			buildPhases = (
+				A0796D7C21DE7B4E00F03D36 /* Sources */,
+				A0796D7D21DE7B4E00F03D36 /* Frameworks */,
+				A0796D7E21DE7B4E00F03D36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0796D8221DE7B4E00F03D36 /* PBXTargetDependency */,
+			);
+			name = "messing around with api and storing dataTests";
+			productName = "messing around with api and storing dataTests";
+			productReference = A0796D8021DE7B4E00F03D36 /* messing around with api and storing dataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0796D8A21DE7B4E00F03D36 /* messing around with api and storing dataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0796D9A21DE7B4E00F03D36 /* Build configuration list for PBXNativeTarget "messing around with api and storing dataUITests" */;
+			buildPhases = (
+				A0796D8721DE7B4E00F03D36 /* Sources */,
+				A0796D8821DE7B4E00F03D36 /* Frameworks */,
+				A0796D8921DE7B4E00F03D36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0796D8D21DE7B4E00F03D36 /* PBXTargetDependency */,
+			);
+			name = "messing around with api and storing dataUITests";
+			productName = "messing around with api and storing dataUITests";
+			productReference = A0796D8B21DE7B4E00F03D36 /* messing around with api and storing dataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0796D6421DE7B4B00F03D36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Makay Chapple";
+				TargetAttributes = {
+					A0796D6B21DE7B4B00F03D36 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A0796D7F21DE7B4E00F03D36 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A0796D6B21DE7B4B00F03D36;
+					};
+					A0796D8A21DE7B4E00F03D36 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A0796D6B21DE7B4B00F03D36;
+					};
+				};
+			};
+			buildConfigurationList = A0796D6721DE7B4B00F03D36 /* Build configuration list for PBXProject "messing around with api and storing data" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0796D6321DE7B4B00F03D36;
+			productRefGroup = A0796D6D21DE7B4B00F03D36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0796D6B21DE7B4B00F03D36 /* messing around with api and storing data */,
+				A0796D7F21DE7B4E00F03D36 /* messing around with api and storing dataTests */,
+				A0796D8A21DE7B4E00F03D36 /* messing around with api and storing dataUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0796D6A21DE7B4B00F03D36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0796D7A21DE7B4E00F03D36 /* LaunchScreen.storyboard in Resources */,
+				A0796D7721DE7B4E00F03D36 /* Assets.xcassets in Resources */,
+				A0796D7521DE7B4B00F03D36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0796D7E21DE7B4E00F03D36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0796D8921DE7B4E00F03D36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0796D6821DE7B4B00F03D36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0796D7221DE7B4B00F03D36 /* ViewController.swift in Sources */,
+				A0796D7021DE7B4B00F03D36 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0796D7C21DE7B4E00F03D36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0796D8521DE7B4E00F03D36 /* messing_around_with_api_and_storing_dataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0796D8721DE7B4E00F03D36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0796D9021DE7B4E00F03D36 /* messing_around_with_api_and_storing_dataUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0796D8221DE7B4E00F03D36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0796D6B21DE7B4B00F03D36 /* messing around with api and storing data */;
+			targetProxy = A0796D8121DE7B4E00F03D36 /* PBXContainerItemProxy */;
+		};
+		A0796D8D21DE7B4E00F03D36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0796D6B21DE7B4B00F03D36 /* messing around with api and storing data */;
+			targetProxy = A0796D8C21DE7B4E00F03D36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0796D7321DE7B4B00F03D36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0796D7421DE7B4B00F03D36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0796D7821DE7B4E00F03D36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0796D7921DE7B4E00F03D36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0796D9221DE7B4E00F03D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0796D9321DE7B4E00F03D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0796D9521DE7B4E00F03D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "messing around with api and storing data/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FirestormStudios.messing-around-with-api-and-storing-data";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0796D9621DE7B4E00F03D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "messing around with api and storing data/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FirestormStudios.messing-around-with-api-and-storing-data";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0796D9821DE7B4E00F03D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "messing around with api and storing dataTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FirestormStudios.messing-around-with-api-and-storing-dataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/messing around with api and storing data.app/messing around with api and storing data";
+			};
+			name = Debug;
+		};
+		A0796D9921DE7B4E00F03D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "messing around with api and storing dataTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FirestormStudios.messing-around-with-api-and-storing-dataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/messing around with api and storing data.app/messing around with api and storing data";
+			};
+			name = Release;
+		};
+		A0796D9B21DE7B4E00F03D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "messing around with api and storing dataUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FirestormStudios.messing-around-with-api-and-storing-dataUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "messing around with api and storing data";
+			};
+			name = Debug;
+		};
+		A0796D9C21DE7B4E00F03D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "messing around with api and storing dataUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FirestormStudios.messing-around-with-api-and-storing-dataUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "messing around with api and storing data";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0796D6721DE7B4B00F03D36 /* Build configuration list for PBXProject "messing around with api and storing data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0796D9221DE7B4E00F03D36 /* Debug */,
+				A0796D9321DE7B4E00F03D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0796D9421DE7B4E00F03D36 /* Build configuration list for PBXNativeTarget "messing around with api and storing data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0796D9521DE7B4E00F03D36 /* Debug */,
+				A0796D9621DE7B4E00F03D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0796D9721DE7B4E00F03D36 /* Build configuration list for PBXNativeTarget "messing around with api and storing dataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0796D9821DE7B4E00F03D36 /* Debug */,
+				A0796D9921DE7B4E00F03D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0796D9A21DE7B4E00F03D36 /* Build configuration list for PBXNativeTarget "messing around with api and storing dataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0796D9B21DE7B4E00F03D36 /* Debug */,
+				A0796D9C21DE7B4E00F03D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0796D6421DE7B4B00F03D36 /* Project object */;
+}

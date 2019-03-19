@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pokemon Search View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PokemonSearchViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="26c-RI-z7R">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KHU-Zj-bpe"/>
+                                </connections>
+                            </searchBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dOu-BY-T0s">
+                                <rect key="frame" x="67.5" y="112" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dOu-BY-T0s" secondAttribute="height" multiplier="1:1" id="RFN-8d-CSK"/>
+                                    <constraint firstAttribute="width" constant="240" id="upg-l8-T2a"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rp-cV-WcI">
+                                <rect key="frame" x="12" y="372" width="351" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSL-FD-bo2">
+                                <rect key="frame" x="179" y="413" width="17" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Rp-cV-WcI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="0zi-Fb-4uz"/>
+                            <constraint firstItem="26c-RI-z7R" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B9a-ca-ed1"/>
+                            <constraint firstItem="dOu-BY-T0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CkI-2n-BkN"/>
+                            <constraint firstItem="eSL-FD-bo2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E6v-Kg-2bt"/>
+                            <constraint firstItem="26c-RI-z7R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JM3-ko-4zk"/>
+                            <constraint firstItem="26c-RI-z7R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kwd-Ja-QTt"/>
+                            <constraint firstItem="eSL-FD-bo2" firstAttribute="top" secondItem="9Rp-cV-WcI" secondAttribute="bottom" constant="20" id="QCd-wX-qlX"/>
+                            <constraint firstItem="dOu-BY-T0s" firstAttribute="top" secondItem="26c-RI-z7R" secondAttribute="bottom" constant="36" id="SoT-KY-kBm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Rp-cV-WcI" secondAttribute="trailing" constant="12" id="hLK-hg-cOV"/>
+                            <constraint firstItem="9Rp-cV-WcI" firstAttribute="top" secondItem="dOu-BY-T0s" secondAttribute="bottom" constant="20" id="wMM-95-iaS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="idLabel" destination="eSL-FD-bo2" id="LU8-8K-jDi"/>
+                        <outlet property="imageView" destination="dOu-BY-T0s" id="M9d-aQ-tBV"/>
+                        <outlet property="nameLabel" destination="9Rp-cV-WcI" id="s2B-KO-UuH"/>
+                        <outlet property="searchBar" destination="26c-RI-z7R" id="Gxn-ys-bSb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

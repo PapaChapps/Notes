@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlapJack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="18ps27" translatesAutoresizingMaskIntoConstraints="NO" id="OcO-pk-RQN">
+                                <rect key="frame" x="67" y="176" width="241" height="395"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIE-11-zyf">
+                                <rect key="frame" x="326" y="76" width="42" height="62"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hlu-3u-bT3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ScoreLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKa-UH-RVZ">
+                                <rect key="frame" x="144" y="19" width="87" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeW-Xf-enG">
+                                <rect key="frame" x="16" y="46" width="135" height="122"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cards remaining" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEl-cP-DrE">
+                                        <rect key="frame" x="0.0" y="8" width="135" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="52" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmH-d0-BAR">
+                                        <rect key="frame" x="42" y="64" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7G-gZ-4O5">
+                                <rect key="frame" x="67" y="579" width="241" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtontapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="utI-K8-njZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhB-zL-nF0">
+                                <rect key="frame" x="67" y="176" width="241" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8B-FI-eP1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OcO-pk-RQN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="188" id="4jQ-QJ-LgR"/>
+                            <constraint firstItem="OcO-pk-RQN" firstAttribute="centerX" secondItem="uKa-UH-RVZ" secondAttribute="centerX" id="Fu3-cs-Wj6"/>
+                            <constraint firstAttribute="trailing" secondItem="SeW-Xf-enG" secondAttribute="trailing" constant="224" id="GvK-rn-7wQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OcO-pk-RQN" secondAttribute="bottom" constant="64" id="QZP-Ig-Nsr"/>
+                            <constraint firstItem="SeW-Xf-enG" firstAttribute="centerY" secondItem="SIE-11-zyf" secondAttribute="centerY" id="QsE-7A-gmh"/>
+                            <constraint firstItem="SeW-Xf-enG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Xoc-Yk-k1E"/>
+                            <constraint firstItem="uKa-UH-RVZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-1" id="XvA-pM-KwI"/>
+                            <constraint firstItem="OcO-pk-RQN" firstAttribute="top" secondItem="SeW-Xf-enG" secondAttribute="bottom" constant="40" id="bcn-hp-tJc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SIE-11-zyf" secondAttribute="trailing" constant="7" id="bpE-FA-cuS"/>
+                            <constraint firstItem="OcO-pk-RQN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="enO-BB-UW5"/>
+                            <constraint firstItem="SeW-Xf-enG" firstAttribute="top" secondItem="uKa-UH-RVZ" secondAttribute="bottom" constant="7" id="kwb-Pr-ncA"/>
+                            <constraint firstItem="OcO-pk-RQN" firstAttribute="top" secondItem="SIE-11-zyf" secondAttribute="bottom" constant="70" id="lju-cQ-ZHw"/>
+                            <constraint firstItem="SIE-11-zyf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="mNb-Vp-xAg"/>
+                            <constraint firstItem="OcO-pk-RQN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="p3R-nE-s5a"/>
+                            <constraint firstItem="uKa-UH-RVZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="wgt-fN-dmj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="SIE-11-zyf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cardImage" destination="OcO-pk-RQN" id="J3e-sF-JlE"/>
+                        <outlet property="pauseButton" destination="SIE-11-zyf" id="NrY-Hp-W38"/>
+                        <outlet property="remainingCardsTextLabel" destination="QmH-d0-BAR" id="3Gb-qQ-Yl2"/>
+                        <outlet property="scoreLabel" destination="uKa-UH-RVZ" id="BMT-po-Vmq"/>
+                        <outlet property="startButton" destination="V7G-gZ-4O5" id="BLw-Go-ev1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="18ps27" width="1024" height="860"/>
+    </resources>
+</document>
