@@ -18,6 +18,8 @@ class networkController {
             
             if let completion = completion {
                 completion(data, error)
+                
+                
             }
         }
         dataTask.resume()
