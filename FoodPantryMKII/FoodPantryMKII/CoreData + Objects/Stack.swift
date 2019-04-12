@@ -33,15 +33,17 @@ class Stack {
     // MARK: - Core Data Saving support
     
     func saveContext () {
-        let context = Stack.persistentContainer.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
-        }
+//        let savedRecipe: Data? = "this is a saved recipe".data(using: .utf8)
+//        savedRecipe?.write(to: <#T##URL#>)
+//        let context = Stack.persistentContainer.viewContext
+//        if context.hasChanges {
+//            do {
+//                try context.save()
+//            } catch {
+//
+//                let nserror = error as NSError
+//                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+//            }
+//        }
     }
 }

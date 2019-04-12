@@ -10,17 +10,38 @@ import Foundation
 
 class NetworkController {
     
-    static func preformNetworkRequest(for url: URL, completion: @escaping (Data?) -> Void)
-        
+    let defaultSession = URLSession(configuration: .default)
+    
+    var dataTask: URLSessionDataTask?
+    
+    
+     func performNetworkRequest(for url: URL, completion: @escaping (Data?) -> Void)
     {
-        let request = URLRequest(url: url)
-        
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
+        dataTask = defaultSession.dataTask(with: url) { data, response, error in
             if let error = error {
                 print(error)
+            } else if let data = data,
+                let response = response as? HTTPURLResponse,
+                response.statusCode == 200 {
+                
+                DispatchQueue.main.async {
+                    completion(data)
+                }
             }
-            guard let data = data else { return }
-            completion(data)
-        }.resume()
+        }
+        dataTask?.resume()
+        
+        
+        
+//        let request = URLRequest(url: url)
+//
+//        URLSession.shared.dataTask(with: request) { (data, response, error) in
+//            if let error = error {
+//                print(error)
+//            }
+//            if data != nil {
+//                completion(data)
+//            }
+//        }.resume()
     }
 }

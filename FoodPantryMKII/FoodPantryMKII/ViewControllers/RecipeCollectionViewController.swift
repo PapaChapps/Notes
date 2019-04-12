@@ -27,7 +27,7 @@ class RecipieCollectionViewController: UICollectionViewController, UISearchBarDe
     
     @IBOutlet weak var foodCell: FoodCell!
     
-    var recipes: [TempRecipe]?
+    var recipes: DecodedRecipes?
     
     
     
@@ -68,7 +68,7 @@ class RecipieCollectionViewController: UICollectionViewController, UISearchBarDe
         collectionView.contentInset = UIEdgeInsets(top: 20, left: 40, bottom: 20, right: 40)
         let bacon: String? = "bacon"
         if let searchBarText = searchController.searchBar.text ?? bacon{
-            getData(tempRecipe: recipes, searchTerm: searchBarText) { ([TempRecipe]?) in
+            getData(tempRecipe: recipes, searchTerm: searchBarText) { (recipes) in
                 if let recipes = self.recipes {
                     self.recipes = recipes
                     DispatchQueue.main.async {
@@ -81,7 +81,7 @@ class RecipieCollectionViewController: UICollectionViewController, UISearchBarDe
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
         if let searchBarText = searchBar.text {
-            getData(tempRecipe: recipes, searchTerm: searchBarText) { ([TempRecipe]?) in
+            getData(tempRecipe: recipes, searchTerm: searchBarText) { (recipes) in
                 if let recipes = self.recipes {
                     self.recipes = recipes
                     DispatchQueue.main.async {
@@ -92,7 +92,7 @@ class RecipieCollectionViewController: UICollectionViewController, UISearchBarDe
         }
     }
     
-    func getData(tempRecipe: [TempRecipe]?, searchTerm: String, completion: @escaping ([TempRecipe]?) -> Void) {
+    func getData(tempRecipe: DecodedRecipes?, searchTerm: String, completion: @escaping (DecodedRecipes?) -> Void) {
         if let searchBarText = searchController.searchBar.text {
             
             RecipeController.sharedController.getRecipes(searchTerm: searchBarText ) { recipeArray in
@@ -145,7 +145,7 @@ class RecipieCollectionViewController: UICollectionViewController, UISearchBarDe
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FoodCell
-        let recipe = recipes?[indexPath.row]
+        let recipe = recipes?.recipes[indexPath.row]
         if let recipe = recipe {
             cell.updateCell(recipe: recipe)
         }
@@ -164,11 +164,18 @@ class RecipieCollectionViewController: UICollectionViewController, UISearchBarDe
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Detail" {
-            if let nextController = segue.destination as? DetailedRecipeViewController,
+            print("\(segue.destination.nibName)")
+            if let nextController = segue.destination as? DetailedRecipeTableViewController,  //breaks here
                 let indexPath = self.collectionView.indexPathsForSelectedItems?.first {
                 nextController.service = NetworkDetailedRecipeService()
                 // nextController.service = StubDetailRecipeService()
-                nextController.recipe = recipes?[indexPath.row]
+                if let TransitionRecipes = recipes {
+                nextController.recipe = TransitionRecipes.recipes[indexPath.row]
+                    print("passed \(nextController.recipe?.name) to next controller")
+                }
+            }
+            else {
+                print("else being triggered")
             }
         }
     }
@@ -179,20 +186,22 @@ class FoodCell: UICollectionViewCell {
     @IBOutlet weak var FoodImage: UIImageView!
     @IBOutlet weak var foodLabel: UILabel!
     
+    let networkController = NetworkController()
+    
     func updateCell(recipe: TempRecipe) {
         self.foodLabel.text = recipe.name
         self.layer.cornerRadius = 12
         
-//        if let url: URL = URL(string: recipe.image) {
-//            NetworkController.preformNetworkRequest(for: url, completion: { (data) in
-//                if let data = data {
-//                    let image = UIImage(data: data)
-//                    DispatchQueue.main.async {
-//                        self.FoodImage.image = image
-//                    }
-//                }
-//            })
-//        }
+        if let url: URL = URL(string: recipe.image) {
+            networkController.performNetworkRequest(for: url, completion: { (data) in
+                if let data = data {
+                    let image = UIImage(data: data)
+                    DispatchQueue.main.async {
+                        self.FoodImage.image = image
+                    }
+                }
+            })
+        }
     }
 }
 
