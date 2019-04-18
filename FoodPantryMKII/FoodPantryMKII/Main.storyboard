@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sEt-FG-pIk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sEt-FG-pIk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -85,6 +85,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="LikeButton" destination="8e4-Na-ek2" id="fJj-6X-zaq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vc7-e6-2BW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +108,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavoriteFoodCell" id="E8o-2S-8bF" customClass="FavoriteFoodCell" customModule="FoodPantryMKII" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavoriteCell" id="E8o-2S-8bF" customClass="SavedRecipeCollectionViewCell" customModule="FoodPantryMKII" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -139,7 +142,8 @@
                                 </constraints>
                                 <size key="customSize" width="150" height="200"/>
                                 <connections>
-                                    <outlet property="ImageView" destination="p1X-ss-MH4" id="ezT-iQ-RPB"/>
+                                    <outlet property="FoodLabel" destination="ebx-Xs-Rj3" id="JfU-4v-She"/>
+                                    <outlet property="foodImage" destination="p1X-ss-MH4" id="2Uc-a3-4Nd"/>
                                     <outlet property="foodLabel" destination="ebx-Xs-Rj3" id="gCG-9R-8yy"/>
                                     <segue destination="Fvm-UW-x2e" kind="show" id="8xZ-xp-8E1"/>
                                 </connections>
@@ -366,6 +370,7 @@
         <!--Item-->
         <scene sceneID="naZ-27-OsL">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8XX-Bq-gpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UhC-ek-9AS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" selectedImage="icons8-salt-bae-50" id="z5I-4w-Ce4"/>
                     <toolbarItems/>
@@ -378,18 +383,17 @@
                         <segue destination="6P7-mc-67f" kind="relationship" relationship="rootViewController" id="huJ-pZ-2El"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8XX-Bq-gpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-44" y="-780"/>
         </scene>
     </scenes>
     <resources>
-        <image name="emptyHeart" width="24" height="24"/>
-        <image name="icons8-salt-bae-50" width="37.5" height="37.5"/>
-        <image name="icons8-tableware-50" width="37.5" height="37.5"/>
+        <image name="emptyHeart" width="32" height="32"/>
+        <image name="icons8-salt-bae-50" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="icons8-tableware-50" width="16.666666030883789" height="16.666666030883789"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="vo6-5e-SEG"/>
-        <segue reference="VKD-Hw-liw"/>
+        <segue reference="8xZ-xp-8E1"/>
     </inferredMetricsTieBreakers>
 </document>

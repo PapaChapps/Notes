@@ -22,15 +22,15 @@ class DetailFoodCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func updateCell(recipe: SingleRecipeContainer) {
+    func updateCell(recipe: DetailedRecipes) {
         let networkController = NetworkController()
         
-        if let url: URL = URL(string: recipe.recipe.image!) {
+        if let url: URL = URL(string: recipe.image!) {
             networkController.performNetworkRequest(for: url, completion: { (data)
                 in
                 if let data = data {
                     let image = UIImage(data: data)
-                    let ingrediantString = recipe.recipe.ingredients?.joined(separator: "\n")
+                    let ingrediantString = recipe.ingredients?.joined(separator: "\n")
                     DispatchQueue.main.async {
                         self.detailedImage.image = image
                         self.descriptionLabel.text = ingrediantString
