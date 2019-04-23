@@ -15,17 +15,18 @@ class DetailedRecipeTableViewController: UITableViewController {
     var recipe: TempRecipe?
     var detailedRecipe: DetailedRecipes?
     var singleRecipeContainer: SingleRecipeContainer?
-    var savedRecipes = [DetailedRecipes]()
+    var savedRecipes : [DetailedRecipes]?
     
     
     @IBOutlet weak var LikeButton: UIBarButtonItem!
     @IBAction func LikeButtonPressed(_ sender: Any) {
         if LikeButton.image == UIImage(named: "emptyHeart") {
             LikeButton.image = UIImage(named: "filledHeart")
-            detailedRecipe?.saveToFile(recipes: savedRecipes)
-            print("recipeSaved")
-            print(savedRecipes)
- 
+            if let savedRecipes = savedRecipes {
+                    detailedRecipe?.saveToFile(recipes: savedRecipes)
+                    print("recipeSaved")
+                    print(savedRecipes)
+            }
         }
         else if LikeButton.image == UIImage(named: "filledHeart") {
             LikeButton.image = UIImage(named: "emptyHeart")
